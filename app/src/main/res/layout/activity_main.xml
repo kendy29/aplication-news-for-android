@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="title"
+            android:id="@+id/insertTitle"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description"
+            android:id="@+id/insertDes"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nama foto"
+            android:id="@+id/edtJudul"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="input Image"
+            android:id="@+id/btnInputImage"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:id="@+id/ImageInput"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_gravity="center"
+            android:id="@+id/btnSave"/>
+    </LinearLayout>
+</ScrollView>
